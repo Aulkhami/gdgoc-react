@@ -5,7 +5,7 @@ export const Hero = () => {
   return (
     <section
       id="home"
-      className="bg-slate-50 text-gray-800 px-12 md:px-48 flex flex-col lg:flex-row justify-center items-center h-screen gap-8"
+      className="text-gray-800 px-12 md:px-48 flex flex-col lg:flex-row justify-center items-center h-screen gap-8"
     >
       <div className="flex flex-col gap-8 lg:grow">
         <div className="flex items-end gap-4">
