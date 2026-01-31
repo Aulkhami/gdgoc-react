@@ -12,6 +12,12 @@ export const Navbar = () => {
             Home
           </a>
           <a
+            href="#projects"
+            className="hover:scale-110 delay-50 ease-out transition h-full rounded-md flex justify-center items-center px-4"
+          >
+            Projects
+          </a>
+          <a
             href="#skills"
             className="hover:scale-110 delay-50 ease-out transition h-full rounded-md flex justify-center items-center px-4"
           >
