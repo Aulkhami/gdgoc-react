@@ -1,4 +1,5 @@
 import React from "react";
+import * as motion from "motion/react-client";
 
 const myProjects = [
   {
@@ -18,12 +19,22 @@ const myProjects = [
 export default function Projects() {
   return (
     <section id="projects" className="px-12 md:px-48 py-12">
-      <h2 className="font-extrabold text-2xl text-center mb-12">My Projects</h2>
+      <motion.h2
+        className="font-extrabold text-2xl text-center mb-12"
+        initial={{ opacity: 0, y: -50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+      >
+        My Projects
+      </motion.h2>
       <div className="flex flexflex-wrap gap-12 justify-center">
         {myProjects.map((v, i) => (
-          <div
+          <motion.div
             key={i}
             className="bg-linear-to-br text-slate-50 from-slate-800 to-slate-950 w-sm min-h-96 rounded-lg shadow-sm shadow-violet-600"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.25 * i }}
           >
             <img
               width={512}
@@ -36,7 +47,7 @@ export default function Projects() {
               </h3>
               <p>{v.description}</p>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>
