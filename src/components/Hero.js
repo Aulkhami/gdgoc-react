@@ -15,15 +15,15 @@ export const Hero = () => {
             className="w-40 h-40 rounded-full object-cover object-top border-2 shadow-lg shadow-violet-900"
           />
           <div>
-            <h1 className="text-6xl font-bold tracking-wide text-slate-950">
+            <h1 className="text-4xl md:text-6xl font-bold tracking-wide text-slate-950">
               Rakha
             </h1>
-            <small className="block text-lg font-mono font-light">
+            <small className="block text-md md:text-lg font-mono font-light">
               Aulkhami
             </small>
           </div>
         </div>
-        <p className="font-mono text-2xl max-w-xl">
+        <p className="font-mono text-xl md:text-2xl max-w-xl">
           Software Engineer, determined to strive for a better future, and
           obsessed with problem solving.
         </p>

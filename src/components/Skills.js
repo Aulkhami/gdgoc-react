@@ -56,6 +56,7 @@ export default function Skills() {
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.25 * i }}
+            viewport={{ once: true }}
           >
             <h6 className="font-bold font-mono">{v.skill}</h6>
             <div className="h-2 rounded-full flex bg-slate-950 shadow-md shadow-violet-950">
