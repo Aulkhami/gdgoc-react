@@ -27,7 +27,7 @@ export default function Projects() {
       >
         My Projects
       </motion.h2>
-      <div className="flex flexflex-wrap gap-12 justify-center">
+      <div className="flex flex-wrap gap-12 justify-center">
         {myProjects.map((v, i) => (
           <motion.div
             key={i}
